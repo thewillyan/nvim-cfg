@@ -60,7 +60,7 @@ lsp.rust_analyzer.setup({
 })
 lsp.clangd.setup({ capabilities = capabilities })
 lsp.pyright.setup({ capabilities = capabilities })
-lsp.gopls.setup({ capabilities = capabilities })
+-- lsp.gopls.setup({ capabilities = capabilities })
 lsp.lua_ls.setup({ capabilities = capabilities })
 lsp.typst_lsp.setup({ capabilities = capabilities })
 
@@ -70,7 +70,7 @@ require("conform").setup({
 		lua = { "stylua" },
 		python = { "black" },
 		rust = { "rustfmt" },
-		go = { "gofmt" },
+		-- go = { "gofmt" },
 		cpp = { "clang-format" },
 		c = { "clang-format" },
 		typst = { "typstyle" },

@@ -1,6 +1,6 @@
 return {
 	-- Colorscheme
-	{ "arturgoms/moonbow.nvim", lazy = false },
+	{ "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
 
 	-- Status line
 	{ "nvim-lualine/lualine.nvim" },

@@ -1,5 +1,6 @@
 -- Set colorscheme
-vim.cmd("colorscheme moonbow")
+vim.o.background = "dark" 
+vim.cmd("colorscheme gruvbox")
 
 -- Set lines
 vim.opt.relativenumber = true
@@ -18,15 +19,14 @@ vim.opt.shiftwidth = 4
 require("lualine").setup({
 	options = {
 		icons_enabled = false,
-		theme = "moonbow",
+		theme = "gruvbox",
 	},
 })
 
 -- Configure syntax highlighting
 require("nvim-treesitter.configs").setup({
-	ensure_installed = { "c", "lua", "vim", "vimdoc", "cpp", "markdown", "markdown_inline", "go", "rust", "python" },
 	sync_install = false,
-	auto_install = false,
+	auto_install = true,
 
 	highlight = {
 		enable = true,
