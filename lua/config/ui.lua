@@ -1,9 +1,10 @@
 -- Set colorscheme
-vim.o.background = "dark" 
+vim.o.background = "dark"
 vim.cmd("colorscheme gruvbox")
 
 -- Set lines
 vim.opt.relativenumber = true
+vim.opt.linebreak = true
 
 -- Set vertical line at the 80th character
 vim.opt.colorcolumn = "100"

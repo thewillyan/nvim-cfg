@@ -62,7 +62,13 @@ lsp.clangd.setup({ capabilities = capabilities })
 lsp.pyright.setup({ capabilities = capabilities })
 -- lsp.gopls.setup({ capabilities = capabilities })
 lsp.lua_ls.setup({ capabilities = capabilities })
-lsp.typst_lsp.setup({ capabilities = capabilities })
+lsp.typst_lsp.setup({
+	capabilities = capabilities,
+	settings = {
+		exportPdf = "never", -- Choose onType, onSave or never.
+		-- serverPath = "" -- Normally, there is no need to uncomment it.
+	},
+})
 
 -- Formatters
 require("conform").setup({
