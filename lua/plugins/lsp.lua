@@ -2,6 +2,13 @@ return {
 	-- LSP
 	{ "neovim/nvim-lspconfig", lazy = false },
 
+	-- Manson
+	{
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+	},
+
 	-- Completion
 	{ "hrsh7th/cmp-nvim-lsp" },
 	{ "hrsh7th/cmp-buffer" },
@@ -14,5 +21,5 @@ return {
 	{ "saadparwaiz1/cmp_luasnip" },
 
 	-- Autoformat
-	{ "stevearc/conform.nvim" },
+	{ "stevearc/conform.nvim", branch = "nvim-0.9" },
 }
